@@ -1,4 +1,4 @@
-olor file
+color file
 "
 " Author: Tomas Restrepo <tomas@winterdom.com>
 " https://github.com/tomasr/molokai
