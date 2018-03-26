@@ -294,4 +294,4 @@ set completeopt=longest,menu
 
 "" NERDTree 快捷键设置
 nnoremap <silent> <C-z> :NERDTree<CR>
-autocmd VimEnter * NERDTree
+""autocmd VimEnter * NERDTree
