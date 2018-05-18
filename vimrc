@@ -1,4 +1,4 @@
-""colorscheme solarized
+colorscheme molokai
 map <F9> :call SaveInputData()<CR>
 func! SaveInputData()
 	exec "tabnew"
@@ -14,6 +14,9 @@ call pathogen#infect()
 call pathogen#helptags()
 
 """"""""""""""""""""
+{
+
+}
 
 " theme
 set background=dark
