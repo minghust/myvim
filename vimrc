@@ -1,4 +1,3 @@
-colorscheme molokai
 map <F9> :call SaveInputData()<CR>
 func! SaveInputData()
 	exec "tabnew"
@@ -12,11 +11,6 @@ endfunc
 filetype off
 call pathogen#infect()
 call pathogen#helptags()
-
-""""""""""""""""""""
-{
-
-}
 
 " theme
 set background=dark
