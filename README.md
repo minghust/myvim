@@ -2,9 +2,11 @@
 use pathogen to manage vim bundles
 
 ## prepare
+```bash
     cd ~
     git clone https://github.com/minghust/vim-git.git ~/.vim
     cd .vim
+```
     
 ## install bundel
     git submodule add <bundel_git_addr> bundle/<bundel_name>
