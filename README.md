@@ -4,7 +4,7 @@ use pathogen to manage vim bundles
 ## prepare
 ```bash
 cd ~
-git clone https://github.com/minghust/vim-git.git ~/.vim
+git clone https://github.com/minghust/myvim.git ~/.vim
 cd .vim
 ```
     
