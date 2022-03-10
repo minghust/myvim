@@ -1,4 +1,4 @@
-# vim-git
+# MyVim
 use pathogen to manage vim bundles
 
 ## prepare
