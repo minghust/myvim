@@ -6,7 +6,7 @@ func! SaveInputData()
 endfunc
 
 
-" Plugin Management "
+" Plugin Management by pathogen "
 
 filetype off
 call pathogen#infect()
@@ -15,6 +15,7 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 显示相关  
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:colorscheme industry
 set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
 set go=             " 不要图形按钮  
 syntax on           " 语法高亮  
@@ -71,9 +72,10 @@ func SetTitle()
 		call append(line(".")+6,"public class ".expand("%"))
 		call append(line(".")+7,"")
 	endif
-	"新建文件后，自动定位到文件末尾
+	"Auto-locate the end of file"
 	autocmd BufNewFile * normal G
 endfunc 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "键盘命令
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -171,14 +173,14 @@ set confirm
 set autoindent
 set cindent
 " Tab键的宽度
-set tabstop=4
-" 统一缩进为4
-set softtabstop=4
-set shiftwidth=4
-" 不要用空格代替制表符
-set noexpandtab
+set tabstop=2
+" 统一缩进为2
+set softtabstop=2
+set shiftwidth=2
+" 用空格代替制表符
+set expandtab
 " 在行和段开始处使用制表符
-set smarttab
+"set smarttab
 " 显示行号
 set number
 " 历史记录数
@@ -200,7 +202,7 @@ set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 set langmenu=zh_CN.UTF-8
 set helplang=cn
 " 我的状态行显示的内容（包括文件类型和解码）
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 "set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
 " 总是显示状态行
 set laststatus=2
