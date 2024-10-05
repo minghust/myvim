@@ -3,8 +3,6 @@ colorscheme molokai
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
-set wrap
-
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
@@ -76,13 +74,14 @@ endif
 " Plugins go here ------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-" Installing plugins is as easy as adding the Plug 'username/plugin-name' string 
+" Installing plugins is as easy as adding the Plug 'username/plugin-name' string
 " you find on GitHub in between the function calls.
-" Save the .vimrc file with the command :w and source the .vimrc file with 
-" this command :source ~/.vimrc to make the changes take effect. 
+" Save the .vimrc file with the command :w and source the .vimrc file with
+" this command :source ~/.vimrc to make the changes take effect.
 " Now type :PlugInstall to download and install the two plugins.
 
   Plug 'preservim/nerdtree'
+  Plug 'wfxr/minimap.vim'
 
 
 call plug#end()
@@ -113,6 +112,12 @@ nnoremap <F3> :NERDTreeToggle<cr>
 
 " KeyMapping end above ----------------------------------------
 
+" minimap things
+let g:minimap_width = 10
+let g:minimap_auto_start = 1
+let g:minimap_auto_start_win_enter = 1
+
+
 
 
 
@@ -132,4 +137,3 @@ set statusline+=\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 " Show the status on the second to last line.
 set laststatus=2
-
