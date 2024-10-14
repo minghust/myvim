@@ -3,6 +3,8 @@ colorscheme molokai
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
+set wrap
+
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
@@ -29,9 +31,6 @@ set expandtab
 
 " Do not save backup files.
 set nobackup
-
-" Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch

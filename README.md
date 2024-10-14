@@ -1,3 +1,6 @@
-use one of the ```xxx-management``` dir and rename it to ```~/.vim```
+Install [code-minimap](https://github.com/wfxr/code-minimap?tab=readme-ov-file)
 
-  $ cp -r myvim/xxx-management ~/.vim
+    $ mv myvim ~/.vim
+    $ vim
+    $ :PlugInstall
+
